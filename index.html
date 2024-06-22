@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>News Website</title>
+</head>
+
+<body class="m-0 p-0">  
+
+
+        <div>
+            <nav id="top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand text-warning" href="index.html">M-News</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div style="padding:10px ;" class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" onclick="Search('general')" href="#genral" id="genral">Genral</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" onclick="Search('business')" href="#business" id="business" >Business</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sports" id="sport">Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#tehnology" onclick="Search('technology')" id="technology">Technology</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#entertainment" onclick="Search('entertainment')" id="entertainment">Entertainment</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="text" id="newsQuery" placeholder="Search news">
+                            <button class="btn btn-outline-warning" type="button" id="searchBtn">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+
+            <a class="btn btn-warning" id="topppp" href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+            <div class="category">
+                <h1 style="margin:20px 0px -10px;padding-bottom: 20px;">SEARCH: <span id="type" style="color: #ad9037;"></span></h1>
+            </div>
+        </div>
+
+            <main></main>
+            
+        <!-- footer -->
+        <div class="mt-5">  
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+                  <div class="container-fluid m-0 p-0">
+                    <h5 class="text-white me-auto ms-auto">Made by<span class="text-warning"> Muhamed-Eid</span></h5>
+                  </div>
+                </nav>
+              </div>
+        </div>
+
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
